@@ -1,11 +1,10 @@
 import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 public class BatterTest
 	{
 	@Test
-	public void BatterTest()
+	public void testBatter()
 		{
 		Batter b = new Batter(300, 100);
 		b.setAtBats(400);
@@ -22,11 +21,11 @@ public class BatterTest
         assertEquals(expected, b.toString());
 	    }
 	
+	@Test
 	public void testCalculateBattingAverage()
 		{
 		Batter b = new Batter(1000, 247);
 		assertTrue(b.calculateBattingAverage() == 0.247);
-	    //assertEquals(0.247, b.calculateBattingAverage());
 		}
 
 	}
