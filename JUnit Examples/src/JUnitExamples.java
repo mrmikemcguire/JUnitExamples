@@ -9,12 +9,12 @@ public class JUnitExamples
 		flipCoin();
 		}
 	
-	public static void greetUser()
+	public static String greetUser()
 		{
 		Scanner userInput = new Scanner(System.in);
 		System.out.println("What is your name?");
 		String name = userInput.nextLine();
-		System.out.println("Hello, " + name + "!");
+		return("Hello, " + name + "!");
 		}
 	
 	public static void flipCoin()
