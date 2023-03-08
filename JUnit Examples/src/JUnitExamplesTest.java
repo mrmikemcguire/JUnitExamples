@@ -6,7 +6,7 @@ public class JUnitExamplesTest
 	@Test
 	public void testGreetUser()
 		{
-		String name = "Fred";
-		assertEquals("Hi, Fred!", JUnitExamples.greetUser());
+		assertEquals("Hello, Fred!", JUnitExamples.greetUser("Fred"));
+		assertEquals("Hello, !", JUnitExamples.greetUser(""));
 		}
 	}
